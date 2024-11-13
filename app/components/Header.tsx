@@ -6,8 +6,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const path = usePathname();
  const isLogin = path.includes("login");
- 
-  // Toggle menu
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -15,12 +14,12 @@ const Header = () => {
   return (
     <header className="w-full font-underline bg-black text-white shadow-md fixed top-0 left-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center p-5">
-        {/* Logo */}
+       
         <h1 className="text-2xl font-bold text-gradient bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-pink-600">
           FaceFinder
         </h1>
 
-        {/* Desktop Navigation */}
+        
         <nav className="hidden items-center md:flex space-x-8">
          
           <a href={`${isLogin?"/":"#home"}`} className="hover:text-yellow-400 transition duration-300">
@@ -37,7 +36,6 @@ const Header = () => {
           </Link>
         </nav>
 
-        {/* Hamburger Icon */}
         <div
           className="md:hidden cursor-pointer"
           onClick={toggleMenu}
@@ -47,8 +45,6 @@ const Header = () => {
           <div className={`w-6 h-[2px] bg-white transition-transform ${isOpen ? "transform -rotate-45 -translate-y-2.5" : ""}`}></div>
         </div>
       </div>
-
-      {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden absolute top-[72px] left-0 w-full h-screen bg-black bg-opacity-90 flex flex-col justify-center items-center space-y-8 transition-opacity duration-500">
           <a

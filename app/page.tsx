@@ -1,4 +1,3 @@
-// HeroSection.js
 import React from "react";
 
 import UploadImageSection from "./components/Upload";

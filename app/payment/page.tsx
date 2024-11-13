@@ -19,13 +19,13 @@ const PaymentPage: React.FC = () => {
       <div className="max-w-md w-full bg-gray-800 p-8 rounded-lg shadow-2xl text-white">
         <h2 className="text-2xl font-bold text-center text-yellow-400 mb-6">Secure Payment</h2>
 
-        {/* Card Image for Decoration */}
+       
         <div className="flex justify-center mb-6">
          <Image height={300} width={300} src="/credit.png" alt="Credit Card" className="w-[350px] h-[100px] object-contain" />
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">
-          {/* Name on Card */}
+         
           <div>
             <label htmlFor="name" className="block text-gray-400 mb-2">Name on Card</label>
             <input
@@ -39,7 +39,7 @@ const PaymentPage: React.FC = () => {
             />
           </div>
 
-          {/* Card Number with Card Icon */}
+    
           <div className="relative">
             <label htmlFor="cardNumber" className="block text-gray-400 mb-2">Card Number</label>
             <input
@@ -57,9 +57,9 @@ const PaymentPage: React.FC = () => {
             </div>
           </div>
 
-          {/* Expiry Date and CVC Fields */}
+        
           <div className="flex gap-4">
-            {/* Expiry Date */}
+           
             <div className="relative w-1/2">
               <label htmlFor="expiry" className="block text-gray-400 mb-2">Expiry Date</label>
               <input
@@ -75,7 +75,7 @@ const PaymentPage: React.FC = () => {
               <span className="absolute left-1 top-10 text-gray-400">📅</span>
             </div>
 
-            {/* CVC */}
+          
             <div className="relative w-1/2">
               <label htmlFor="cvc" className="block text-gray-400 mb-2">CVC</label>
               <input
@@ -92,7 +92,7 @@ const PaymentPage: React.FC = () => {
             </div>
           </div>
 
-          {/* Submit Button */}
+          
           <button
             type="submit"
             className="w-full py-3 mt-4 bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold rounded-lg transition duration-300 shadow-lg hover:shadow-yellow-500"

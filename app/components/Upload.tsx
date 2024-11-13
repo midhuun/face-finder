@@ -19,14 +19,13 @@ const UploadImageSection: React.FC = () => {
   const handleUpload = () => {
     setIsUploading(true);
     setTimeout(() => {
-      // Simulate fetching 5 random images
       const randomImages = Array.from({ length: 6 }, () =>
         `https://picsum.photos/600/400?random=${Math.floor(Math.random() * 1000)}`
       );
       setFetchedImages(randomImages);
       setIsUploading(false);
       setFile(null);
-    }, 2000); // 2-second delay to mimic upload and fetch time
+    }, 2000); 
   };
 
   const resetUpload = () => {
@@ -36,7 +35,6 @@ const UploadImageSection: React.FC = () => {
 
   return (
     <div id="upload" className="font-underline min-h-screen bg-black text-white p-6 flex flex-col items-center">
-      {/* Upload Section */}
       <div className="max-w-md w-full bg-[#121212] p-8 rounded-lg shadow-lg text-center">
         {!fetchedImages.length ? (
           <>
@@ -108,7 +106,6 @@ const UploadImageSection: React.FC = () => {
         ) : null}
       </div>
 
-      {/* Full-Width Results Display */}
       {fetchedImages.length > 0 && (
         <div className="w-full mt-12">
           <h2 className="text-3xl font-bold mb-4 text-center bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-pink-600">

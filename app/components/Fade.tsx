@@ -14,7 +14,7 @@ const FadeInSection: React.FC<{ children: React.ReactNode }> = ({ children }) =>
       },
       {
         root: null,
-        threshold: 0.2, // Adjust to control when the effect triggers
+        threshold: 0.2, 
       }
     );
 
