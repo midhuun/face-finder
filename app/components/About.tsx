@@ -1,5 +1,4 @@
 import React from "react";
-import { IoEarOutline, IoEarSharp } from "react-icons/io5";
 import { LiaLaptopCodeSolid } from "react-icons/lia";
 import { SiHearthisdotat, SiOpensearch, SiPagespeedinsights } from "react-icons/si";
 
@@ -24,7 +23,7 @@ const AboutUsPage: React.FC = () => {
             Our platform is designed to help you find any image from across the web and provide all the important details about it. From social media to image databases, we bring you the most relevant images with all the metadata you need to make informed decisions.
           </p>
           <p className="md:text-xl text-gray-300 leading-relaxed">
-            Whether you're a researcher, designer, or someone looking to uncover the story behind an image, we make sure you have the tools to get there faster and smarter.
+            Whether you are a researcher, designer, or someone looking to uncover the story behind an image, we make sure you have the tools to get there faster and smarter.
           </p>
         </section>
 

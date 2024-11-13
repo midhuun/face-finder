@@ -1,6 +1,4 @@
 "use client";
-import { Elements } from "@stripe/react-stripe-js";
-import { loadStripe } from "@stripe/stripe-js";
 import Link from "next/link";
 import React from "react";
 const PricingSection: React.FC = () => {

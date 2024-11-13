@@ -1,8 +1,8 @@
 "use client";
 import Image from 'next/image';
 import React, { useState } from 'react';
-import { FaCcVisa, FaCcMastercard, FaCcAmex } from 'react-icons/fa';
-import { FaRegCreditCard } from "react-icons/fa6";
+import { FaCcVisa } from 'react-icons/fa';
+
 const PaymentPage: React.FC = () => {
   const [name, setName] = useState('');
   const [cardNumber, setCardNumber] = useState('');

@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import { FaSpinner } from "react-icons/fa";
+import Image from "next/image";
 
 const UploadImageSection: React.FC = () => {
   const [file, setFile] = useState<File | null>(null);
@@ -82,7 +83,7 @@ const UploadImageSection: React.FC = () => {
 
                 {file && (
                   <div className="mt-6 relative">
-                    <img
+                    <Image height={300} width={300}
                       src={URL.createObjectURL(file)}
                       alt="Uploaded Preview"
                       className="w-full h-48 object-cover rounded-lg shadow-lg mb-4"
@@ -116,8 +117,8 @@ const UploadImageSection: React.FC = () => {
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {fetchedImages.map((img, index) => (
                 <div className="relative transition-transform duration-300 hover:scale-105"  key={index}>
-              <img
-               
+              <Image
+                height={300} width={300}
                 src={img}
                 alt={`Result ${index + 1}`}
                 className="md:w-[450px] h-[150px] w-[150px] md:h-[350px] object-cover rounded-lg shadow-lg "
