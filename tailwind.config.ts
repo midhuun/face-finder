@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        underline: ['var(--font-underline)'],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
